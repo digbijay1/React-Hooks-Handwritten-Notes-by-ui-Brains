@@ -1,0 +1,201 @@
+                            LECTURE-23
+
+
+
+React hooks
+-------------
+hooks-some special functions
+useEffect
+useState
+useRef
+
+
+hooks has no render ,it has only return which returns the jsx
+
+Ui bRAins-hooks introduction
+1St example is class based compoonent with counter applicationj
+2nd example to functtional compaonent
+-->state measn a local variable whwere i have to store the local info i.e to maintain a variable and change the things in dynamically
+-->
+usestate HOOK- 
+the first statement of functional component is the hook
+usestate returns an array ,it conatins 2 parameters.1 st parameter is inital value,2 ndd parametre is the updated function
+
+2 types of function calling on btn clcikling
+--
+1 st type
+-------------------------------
+define the function update Counter here
+update Counter(){
+setUpdateValue(count+1)
+}
+<button onClick={updateCounter}><button/> 
+2 nd type fucntion i.r inline function 
+//annonymous funmction call
+ <button onClick={()=>setUpdateValue(value+1)}>Updatecounter<button/> 
+
+
+                                 
+             
+                               Events Binding
+-----------------------------------------------------------------------------------------------
+ if you want to pass some argument to tyhe functionm calll then you have to use bind in functional component or use only normal annonyomus function call and set the parrammeter ionto it.
+  trick remeber it 
+ what i am tryimng to explain that i.e
+ lety  sayGoodeveng=(value)=>{
+ setMessage(vallue)
+ };
+ 
+ -->when click on the buuton of goodd eveng
+ <button type="button" onClick={sayGoodeveng.bind(this,"goodeveng")}> Good Eevnmg<button/> 
+ 
+ 
+ 2nd example
+  
+  show table dadta exampole
+
+  -2+
+ 
+ 
+ if you click the plus siogn the count is be increased and if you click the minus sign the count value is to be decreased..
+ 
+ 
+ 
+ let[product,setProduct]=useState({
+ id:"1",
+ image:"ada",
+ name:"dadoa",
+ qty:2
+ }
+ )
+ 
+let incrQty=()=>{
+setProduct({
+...product,
+qty:product.qty+1
+
+})
+}
+
+
+
+                                    Forms-Binding
+                                    
+----------------------------------------------------------------------------------------------
+1stExample:-welcome message:-
+------------------------------
+
+there isa  form in the page
+what ever you write in the form it shows in the bnelow
+
+
+
+const[username,setUserName]=useState("")
+let updateInput = (e) => {
+setUserName(e.target.value);
+}
+
+
+<input>
+name="name"
+value={username}
+onChange={updateInput}
+type="text"
+placeholder="username"/>
+
+
+
+//you can simplify by writing annonymous function 
+
+
+i.e
+<input>
+name="name"
+value={username}
+onChange={ (e) => setUserName(e.target.value);}
+type="text"
+placeholder="username"/>
+
+
+
+
+Example-2:-
+--------------
+check iunput boxes
+car example it is same AS the previous one
+
+
+Example-3
+----------------------
+SMS app
+
+use only 2 states here
+
+same cvoncept as previous
+
+
+Example-3
+-------------------------------
+total form binding on submit button i.e register user
+
+for visualise thew state data-just use 
+<pre>{JSON.stringify(user)}</pre>
+
+const[user,setUser]=useState({
+id="";
+designation="";
+terms:fasle
+
+})
+
+
+
+let updatedInput=(event) =>{
+setUser({
+...user,
+[event.target.name]:event.target.value
+})
+}
+
+
+and wqrite name property in every oncyhange method
+like
+name="terms"
+name="designation"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
