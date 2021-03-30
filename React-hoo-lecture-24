@@ -1,0 +1,182 @@
+                                                       
+                                          React hoosk conditional ,contextApi,life cycle method,http,axios
+ Example-1
+ ------------------------------
+ AuthUser
+  
+  login logout
+  
+  
+  Example-2
+  Hobby selector
+   cliock cjheck box ancd show something
+   
+   
+   it si ssame as previous one
+   
+   
+   Example-3
+   hobvgy as radio button
+ it is asme asa  previousd one
+ 
+ 
+ Example-4
+ 	Employey cards
+same as previous one
+
+ 	
+Examplse-5
+ fetch the dta from file and show it in the  ui
+ 
+            Copmponent Interaction
+            
+Basic Example
+se3nd data from p[arent to  immeediate choild and frrom child to p[arent
+
+
+To send data from parent to child is easy i.e directly send the props and if u try to send data from  child to parent it is bit tricky
+
+
+Intrermideate level
+-----------------------
+there are 2 input boxes whatever you try to send to parent to child u can send and from child u can send data to parernt also.
+check this code again bit confused
+
+
+
+
+Advance level
+
+---------
+send clent to severre and from server to client
+
+
+means the clint want tto send the data to server and server warnt to sned the data to client itself but there si no parent child realationsships so the 
+
+
+
+very very imp reamm,ber it
+the coppmponrnt interacxtion should br in the pareant child inmteraction,twqoi comp0onrnet at same level cant intearct with them,.,
+
+
+the client--->send data to app.js  -->then from app.js send the data to client
+and vise versa bcoz app. js is the parent of both the compoainentas
+
+
+check this code again bit confused
+
+-------------------------------------------------------------------------------------------------------------------------------------------
+conectx api
+props drillign
+lifecycle
+
+
+
+
+props dreilling
+--------------------------
+if you wantt to send datra from componentt A to component c.
+App to
+compo A to
+Compod B to
+Compo c 
+
+i.e called props drilling
+
+But it is noty good
+
+
+Life cycle
+---------------------
+Digital watch
+
+
+useEffect->componenet did mount(when component is successfully loaded to dom)
+useEffecxt->componenty wILLuNMOUNT(WHEN THE COMPONENET IS REMOVED FROM DOM)
+
+
+
+SYNTAX
+===========================
+useEffect(()=>{
+return ()=>{
+//componentWillUnmount
+      }
+   });
+
+
+everytime is when the state will be changed it loads every time whenever state change
+
+
+useContext
+================
+i can directyly passa the data to the required childd not sending data to each level
+check this code agaiun
+
+one is provider and one is consumer
+========================
+-----------------------------------------------------------------------------------------------------------------------------------------
+
+                                              react with http and axios
+         useEffect=
+         the useefect get executyed whenever the com,pone tis susccefully loaded in dom
+         if you dont use the empty array in useeeffect thhe api wwill fetcha t every time so pls use react hooks with empty array depedency
+        useeffect with empty array =>
+        one time call of aoppi
+        
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
